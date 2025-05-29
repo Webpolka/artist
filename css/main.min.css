@@ -3162,6 +3162,11 @@ PAYMENT PAGE
     gap: 20px;
   }
 }
+@media (max-width: 395px) {
+  .product-gallery__thumbnails {
+    gap: 15px;
+  }
+}
 .product-gallery__thumbnails a {
   display: block;
   max-width: 95px;
@@ -3174,6 +3179,12 @@ PAYMENT PAGE
 }
 .product-gallery__thumbnails a:hover {
   transform: scale(1.05);
+}
+@media (max-width: 395px) {
+  .product-gallery__thumbnails a {
+    max-width: 80px;
+    max-height: 80px;
+  }
 }
 .product-info {
   transform: translateX(32px);
@@ -3219,6 +3230,11 @@ PAYMENT PAGE
   .product-info_description {
     padding-top: 88px;
     margin-bottom: 55px;
+  }
+}
+@media (max-width: 395px) {
+  .product-info_description {
+    padding-top: 64px;
   }
 }
 .product-info_list {
