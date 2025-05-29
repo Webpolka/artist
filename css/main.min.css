@@ -1884,7 +1884,7 @@ HEADER
   margin-left: auto;
   margin-right: auto;
   padding: 0 var(--adaptive-margin);
-  padding-bottom: 153px;
+  padding-bottom: 115px;
 }
 .header-nav_mobile .mobile-tile {
   position: relative;
