@@ -449,24 +449,24 @@ BURGER MENU
 
 	if (burgerBtn && mobileNav) {
 		burgerBtn.addEventListener("click", () => {
-			const mobileTile = mobileNav.querySelector(".mobile-tile");
-			mobileTile.scrollTo({ top: mobileTile.scrollHeight });
-			setTimeout(function () {
-				mobileTile.scrollTo({
-					top: 0,
-					behavior: "smooth",
-				});
-			}, 1000);
+			// const mobileTile = mobileNav.querySelector(".mobile-tile");
+			// mobileTile.scrollTo({ top: mobileTile.scrollHeight });
+			// setTimeout(function () {
+			// 	mobileTile.scrollTo({
+			// 		top: 0,
+			// 		behavior: "smooth",
+			// 	});
+			// }, 1000);
 			mobileNav.classList.toggle("show");
 			// body.classList.toggle("no-scroll");
 		});
 
 		mobileNav.addEventListener("click", () => {
-			const mobileTile = mobileNav.querySelector(".mobile-tile");
-			mobileTile.scrollTo({
-				top: mobileTile.scrollHeight,
-				behavior: "smooth",
-			});
+			// const mobileTile = mobileNav.querySelector(".mobile-tile");
+			// mobileTile.scrollTo({
+			// 	top: mobileTile.scrollHeight,
+			// 	behavior: "smooth",
+			// });
 			mobileNav.classList.remove("show");
 			// body.classList.remove("no-scroll");
 		});
