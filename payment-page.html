@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Payment & Delivery</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="vendor/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./css/main.min.css">  
+</head>
+ 
+ 
+
+<body>  
+  <div class="wrapper">
+    <header class="header">
+	<div class="container">
+		<div class="header-row">
+			<a href="index.html" class="header-logo">
+				<img class="img-responsive" src="./images/logo.png" alt="Logo image">
+			</a>
+			<nav class="header-nav" id="desktop-nav">
+				<ul class="menu">
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#boutique">Boutique</a></li>
+					<li><a href="index.html#gallery">Gallery</a></li>
+					<li><a href="index.html#contacts">Contacts</a></li>
+				</ul>
+			</nav>
+
+			<button class="header-nav_burger" id="mobile-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</div>
+
+	<div class="header-nav_mobile" id="mobile-nav">
+		<div class="mobile">
+			<div class="mobile-tile">
+				<button class="mobile-tile_close" id="mobile-close">
+					<span>Menu</span>
+				</button>
+				<ul class="mobile-tile_menu">
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#boutique">Boutique</a></li>
+					<li><a href="index.html#gallery">Gallery</a></li>
+					<li><a href="index.html#contacts">Contacts</a></li>
+					<li><a href="index.html#faq">FAQ</a></li>
+					<li><a href="index.html#subscribe">Subscribe</a></li>
+				</ul>
+				<div class="mobile-tile_info">
+					<div class="info-box">
+						<p>Email:<span>info@noirgold.art</span></p>
+						<p>Phone:<span>+1 (234) 567-890</span></p>
+					</div>
+				</div>
+				<div class="mobile-tile_social">
+					<div class="social-box">
+						<a href="#">
+							<img class="img-responsive" src="./images/icons-png/twitter.png" alt="Twitter">
+						</a>
+						<a href="#">
+							<img class="img-responsive" src="./images/icons-png/facebook.png" alt="Facebook">
+						</a>
+						<a href="#">
+							<img class="img-responsive" src="./images/icons-png/insta.png" alt="Instagram">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+    <main class="page">
+      <section class="payment">
+	<div class="container">
+		<div class="sunspot-wrap">
+			<div class="payment_sunspot"></div>
+
+			<div class="row index-up justify-content-center">
+				<div class="col-10">
+					<div class="payment_mytitle">
+						<h1>Payment & delivery</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row index-up justify-content-center">
+				<!-- FORM -->
+				<div class="col-12 col-md-5 order-2 order-md-1">
+					<div class="payment_form">
+						<form action="">
+							<!-- Shipment -->
+							<div class="payment_form-item">
+								<h4 class="shipment-padding">Shipment <i>details</i></h4>
+
+								<label class="full-block" for="shipping-name">Your full name:</label>
+								<input type="text" id="shipping-name" name="shipping-name" required>
+
+								<label class="full-block" for="shipping-address">Street:</label>
+								<input type="text" id="shipping-address" name="shipping-address" required>
+
+								<!-- Shipment line -->
+								<div class="shipment-line">
+									<!-- 1 -->
+									<div class="shipment-line_item">
+										<label class="full-block" for="shipping-city">City</label>
+										<input type="text" id="shipping-city" name="shipping-city" required>
+									</div>
+									<!-- 2 -->
+									<div class="shipment-line_item">
+										<label class="full-block" for="shipping-state">State</label>
+										<input type="text" id="shipping-state" name="shipping-state" required>
+									</div>
+									<!-- 3 -->
+									<div class="shipment-line_item">
+										<label class="full-block" for="shipping-zip">Zip Code</label>
+										<input type="text" id="shipping-zip" name="shipping-zip" required>
+									</div>
+								</div>
+							</div>
+
+							<!-- Information -->
+							<div class="payment_form-item">
+								<h4 class="information-padding show-desktop">Payment <i>information</i></h4>
+								<h4 class="information-padding show-mobile">Pay <i>with card</i></h4>
+
+								<!-- Information line 1-->
+								<div class="information-line1">
+									<!-- 1 -->
+									<div class="information-line1_item">
+										<label class="full-block" for="first-name">First mame</label>
+										<input type="text" id="first-name" name="first-name" required>
+									</div>
+									<!-- 2 -->
+									<div class="information-line1_item">
+										<label class="full-block" for="last-name">Last name</label>
+										<input type="text" id="last-name" name="last-name" required>
+									</div>
+								</div>
+
+								<label class="full-block" for="card-number">Card number</label>
+								<input type="text" id="card-number" name="card-number" required>
+
+								<!-- Information line 2-->
+								<div class="information-line2">
+									<!-- 1 -->
+									<div class="information-line2_item">
+										<label class="full-block" for="expiry-date">Expiry date <span class="md-hidden">(mm/yy):</span></label>
+										<input class="expiry-date" type="text" id="expiry-date" name="expiry-date" required>
+									</div>
+									<!-- 2 -->
+									<div class="information-line2_item">
+										<label class="full-block" for="cvv">CVC</label>
+										<input type="text" id="cvv" name="cvc" required>
+									</div>
+								</div>
+							</div>
+
+							<!-- Billing -->
+							<div class="payment_form-item margin-bottom-last">
+								<h4 class="billing-padding">Billing <i>address</i></h4>
+
+								<div class="checkbox-item">
+									<input type="checkbox" class="checkbox-input" id="same-as-billing" name="same-as-billing">
+									<label class="checkbox-label inline-block" for="same-as-billing">Same as shipping</label>
+								</div>
+
+								<label class="full-block small-top-padding" for="billing-address">Street <span class="md-hidden">(house and apartment number):</span></label>
+								<input type="text" id="billing-address" name="billing-address" required>
+
+								<!-- Billing line -->
+								<div class="billing-line">
+									<!-- 1 -->
+									<div class="billing-line_item">
+										<label class="full-block" for="billing-city">City</label>
+										<input type="text" id="billing-city" name="billing-city" required>
+									</div>
+									<!-- 2 -->
+									<div class="billing-line_item">
+										<label class="full-block" for="billing-state">State</label>
+										<input type="text" id="billing-state" name="billing-state" required>
+									</div>
+									<!-- 3 -->
+									<div class="billing-line_item">
+										<label class="full-block" for="billing-zip">Zip Code</label>
+										<input type="text" id="billing-zip" name="billing-zip" required>
+									</div>
+								</div>
+							</div>
+
+							<div class="payment_form-btn">
+								<a href="conformation-page.html" class="btn" type="submit"><span>Continue</span></a>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<!-- ORDER -->
+				<div class="col-12 col-md-5 order-1 order-md-2">
+					<div class="payment_orders">
+						<h4>Order</h4>
+
+						<div class="orders">
+							<!-- 1 -->
+							<div class="orders-item">
+								<div class="orders-item_image">
+									<img class="img-responsive" src="./images/products/product-3.jpg" alt="Order">
+								</div>
+								<div class="orders-item_content">
+									<h3>Candlestick Moon&Sun</h3>
+									<p>home decor</p>
+								</div>
+								<div class="orders-item_price">
+									<span>$ 150</span>
+								</div>
+							</div>
+
+							<!-- 2 -->
+							<div class="orders-item">
+								<div class="orders-item_image">
+									<img class="img-responsive" src="./images/products/product-2.jpg" alt="Order">
+								</div>
+								<div class="orders-item_content">
+									<h3>Light Mystery in Dark</h3>
+									<p>home decor</p>
+								</div>
+								<div class="orders-item_price">
+									<span>$230</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- totals -->
+						<div class="totals">
+							<div class="totals-item">
+								<div class="totals-item_desc">Subtotal:</div>
+								<div class="totals-item_value">$380</div>
+							</div>
+							<div class="totals-item">
+								<div class="totals-item_desc">Delivery</div>
+								<div class="totals-item_value">$30</div>
+							</div>
+							<div class="totals-item">
+								<div class="totals-item_desc">Tax</div>
+								<div class="totals-item_value">$26.02</div>
+							</div>
+							<!-- PAYMENT TOTAL - END VALUE -->
+							<div class="totals-item" id="payment-total">
+								<div class="totals-item_desc">Total:</div>
+								<div class="totals-item_value">$436.00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+    </main>
+    <footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-7 col-xl-6">
+				<a href="index.html" class="footer-logo">
+					<span class="footer-logo_img">
+						<img class="img-responsive" src="./images/logo.png" alt="Logo image">
+					</span>
+					<span class="footer-logo_text"> Noir <br>&nbsp;&nbsp; <span>gold </span>art </span>
+				</a>
+			</div>
+			<div class="col-6 col-md-2 col-xl-2">
+				<ul class="adaptive-left-50">
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#boutique">Boutique</a></li>
+					<li><a href="index.html#gallery">Gallery</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md-3 col-xl-4">
+				<ul>
+					<li><a href="order-page.html">Order and return</a></li>
+					<li><a href="privacy-page.html">Private policy</a></li>
+					<li><a href="index.html#contacts">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-copyright">
+			<p>© All Rights Reserved. Victor Selin</p>
+		</div>
+	</div>
+
+	<!-- COOKIE WINDOW HTML -->
+	<div class="cookies-window" id="cookies-window">
+		<div class="cookies-window_inner">
+			<p>
+				By using this website, you agree to our use of cookies 🍪 <br>
+				We use cookies to improve your experience and analyze traffic.
+			</p>
+
+			<button class="cookies-window_close" id="cookies-close">
+				<svg class="cross-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+					<line x1="20" y1="20" x2="80" y2="80" stroke="white" stroke-width="10" stroke-linecap="round"/>
+					<line x1="80" y1="20" x2="20" y2="80" stroke="white" stroke-width="10" stroke-linecap="round"/>
+				</svg>
+			</button>
+		</div>
+	</div>
+</footer>
+
+  </div>
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
