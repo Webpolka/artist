@@ -448,27 +448,14 @@ BURGER MENU
 	const body = document.querySelector("body");
 
 	if (burgerBtn && mobileNav) {
-		burgerBtn.addEventListener("click", () => {
-			// const mobileTile = mobileNav.querySelector(".mobile-tile");
-			// mobileTile.scrollTo({ top: mobileTile.scrollHeight });
-			// setTimeout(function () {
-			// 	mobileTile.scrollTo({
-			// 		top: 0,
-			// 		behavior: "smooth",
-			// 	});
-			// }, 1000);
+		burgerBtn.addEventListener("click", () => {			
 			mobileNav.classList.toggle("show");
-			// body.classList.toggle("no-scroll");
+			body.classList.toggle("no-scroll");
 		});
 
-		mobileNav.addEventListener("click", () => {
-			// const mobileTile = mobileNav.querySelector(".mobile-tile");
-			// mobileTile.scrollTo({
-			// 	top: mobileTile.scrollHeight,
-			// 	behavior: "smooth",
-			// });
+		mobileNav.addEventListener("click", () => {			
 			mobileNav.classList.remove("show");
-			// body.classList.remove("no-scroll");
+			body.classList.remove("no-scroll");
 		});
 	} else {
 		console.log("Mobile navigation HTML in DOM is broken !");
