@@ -1854,10 +1854,10 @@ HEADER
   position: fixed;
   left: 0;
   right: 0;
-  top: -150%;
-  bottom: 150%;
+  top: -110%;
+  bottom: 110%;
   overflow: hidden;
-  transition: all 1.2s ease-in-out;
+  transition: all 1.1s ease-in-out;
   z-index: 10;
   touch-action: manipulation;
   padding-bottom: 53px;
